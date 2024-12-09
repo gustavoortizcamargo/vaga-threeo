@@ -22,11 +22,24 @@ Este projeto é composto por uma API desenvolvida em **.NET 8** e um frontend em
 
 ## Requisitos
 
-1. **Docker** e **Docker Compose** instalados:
+1. **Docker** instalado:
    - [Guia de instalação do Docker](https://docs.docker.com/get-docker/)
-   - [Guia de instalação do Docker Compose](https://docs.docker.com/compose/install/)
+   - 
+2. **Node.js 20** instalado:  
+   - [Download do Node.js](https://nodejs.org/)  
 
-2. **Portas disponíveis:**
+3. **Angular CLI 19** instalado:  
+   - Instalar com o comando:  
+     ```bash
+     npm install -g @angular/cli@19
+     ``` 
+4. **.NET 8 SDK** instalado:  
+   - [Download do .NET 8 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/8.0)  
+   - Verifique a instalação com o comando:  
+     ```bash
+     dotnet --version
+     ```
+5. **Portas disponíveis:**
    - 8080
      8081 (API)
    - 80 (Frontend)
