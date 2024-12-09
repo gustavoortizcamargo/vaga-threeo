@@ -11,7 +11,7 @@ export const appConfig: ApplicationConfig = {
     provideRouter(appRoutes), 
     importProvidersFrom(HttpClientModule),
     provideAnimationsAsync(),    
-    { provide: 'apiUrl', useValue: 'https://localhost:8080/api' }
+    { provide: 'apiUrl', useValue: 'https://localhost:55899/api' }
   ]
 };
 
