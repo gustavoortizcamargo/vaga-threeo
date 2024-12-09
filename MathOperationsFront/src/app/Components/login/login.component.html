@@ -1,0 +1,27 @@
+  <mat-card-content class="container">
+
+    <mat-card class="card-login">
+      <mat-card-header class="card-login-title">Login</mat-card-header>      
+  
+        <mat-card-content class="conteudo-login">
+  
+          <mat-form-field class="form-field-full">
+            <mat-label>Email</mat-label>
+            <input matInput type="email" [(ngModel)]="credentials.email" placeholder="Digite seu email">         
+          </mat-form-field>
+  
+          <mat-form-field class="form-field-full">
+            <mat-label>Senha</mat-label>
+            <input matInput type="password" [(ngModel)]="credentials.password" placeholder="Digite sua senha">
+            
+          </mat-form-field>
+  
+        </mat-card-content>
+  
+      <mat-card-actions align="end">
+        <button mat-button color="primary" class="full" align="end" (click)="fazerLogin()">Entrar</button>
+      </mat-card-actions>
+  
+    </mat-card>
+  
+  </mat-card-content>

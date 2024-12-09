@@ -1,0 +1,21 @@
+# Etapa de build do Angular
+FROM node:20-alpine AS build
+
+WORKDIR /app
+
+COPY package*.json ./
+RUN npm ci
+COPY . .
+RUN npm run build --prod
+
+# Etapa de produção com Nginx
+FROM nginx:alpine
+
+# Copia os arquivos de build do Angular para a pasta HTML do Nginx
+COPY --from=build /app/dist/mathoperations-frontend /usr/share/nginx/html
+
+# Expõe a porta 80
+EXPOSE 80
+
+# Inicia o Nginx
+CMD ["nginx", "-g", "daemon off;"]

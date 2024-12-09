@@ -1,0 +1,23 @@
+﻿[
+  {
+    "Id": 1,
+    "Name": "Visitante",
+    "Email": "visitante@example.com",
+    "Password": "senha123",
+    "Roles": [ "visitante" ]
+  },
+  {
+    "Id": 2,
+    "Name": "Aluno",
+    "Email": "aluno@example.com",
+    "Password": "senha456",
+    "Roles": [ "aluno" ]
+  },
+  {
+    "Id": 3,
+    "Name": "Admin",
+    "Email": "admin@example.com",
+    "Password": "senha789",
+    "Roles": [ "admin" ]
+  }
+]

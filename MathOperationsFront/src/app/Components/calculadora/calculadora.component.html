@@ -1,0 +1,26 @@
+<div class="container">
+  <h1 class="title">Calculadora Básica</h1> 
+
+  <div class="input-group">
+    <mat-form-field >
+      <mat-label>Valor 1</mat-label>
+      <input matInput type="number" [(ngModel)]="valor1">
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Valor 2</mat-label>
+      <input matInput type="number" [(ngModel)]="valor2">
+    </mat-form-field>
+  </div>
+
+  <div class="button-group">
+    <button mat-raised-button (click)="calcular(0)">Somar</button>
+    <button mat-raised-button (click)="calcular(1)">Subtrair</button>
+    <button mat-raised-button (click)="calcular(2)">Multiplicar</button>
+    <button mat-raised-button (click)="calcular(3)">Dividir</button>
+  </div>
+
+  <div *ngIf="mostrarResultado" class="result">
+    Resultado: {{resultado}}
+  </div>
+</div>
